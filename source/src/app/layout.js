@@ -5,7 +5,14 @@ import VideoBackground from "@/components/VideoBackground";
 import Navigation from "@/components/Navigation";
 import Version from "@/components/Version";
 
+import { JetBrains_Mono } from "next/font/google";
+
 import "./globals.css";
+
+const jetbrains_mono = JetBrains_Mono({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata = {
   title: "pixel.build",
@@ -18,10 +25,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="stylesheet" href="https://use.typekit.net/sce8ohu.css" />
-      </head>
+    <html lang="en" className={jetbrains_mono.className}>
       <body>
         <Analytics />
         <SpeedInsights />
