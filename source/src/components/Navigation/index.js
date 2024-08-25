@@ -4,6 +4,10 @@ import React from "react";
 
 const links = [
   {
+    name: "Home",
+    href: "/",
+  },
+  {
     name: "About",
     href: "#",
     classes: "cursor-not-allowed line-through",
@@ -11,15 +15,11 @@ const links = [
   },
   {
     name: "Capabilities",
-    href: "#",
-    classes: "cursor-not-allowed line-through",
-    title: "Coming soon...",
+    href: "/capabilities",
   },
   {
     name: "Contact",
-    href: "#",
-    classes: "cursor-not-allowed line-through",
-    title: "Coming soon...",
+    href: "mailto:contact@pixel.build",
   },
 ];
 
